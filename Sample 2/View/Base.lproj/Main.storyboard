@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Sample_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hCA-f8-Myb">
+                                <rect key="frame" x="82" y="423" width="250" height="60"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="T0b-uj-w9l"/>
+                                    <constraint firstAttribute="height" constant="60" id="kWy-W2-19Z"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YcY-dl-wS6">
+                                <rect key="frame" x="82" y="423" width="250" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="NQP-Ob-bvy"/>
+                                    <constraint firstAttribute="height" constant="60" id="Xki-s8-ZBl"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YcY-dl-wS6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GMw-B4-meT"/>
+                            <constraint firstItem="hCA-f8-Myb" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Rb1-19-F2S"/>
+                            <constraint firstItem="YcY-dl-wS6" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="fRQ-KE-6ws"/>
+                            <constraint firstItem="hCA-f8-Myb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fds-YB-Nei"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerUIStackView" destination="YcY-dl-wS6" id="TLE-uK-MN3"/>
+                        <outlet property="viewContainer" destination="hCA-f8-Myb" id="Eus-sn-8cW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
